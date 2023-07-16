@@ -15,6 +15,12 @@ git clone https://github.com/reilta/docker-airflow-project.git
   watch docker ps
 ```
 
+### Visualizando o airflow
+
+```
+localhost:8080
+```
+
 ### Parando e removendo os containers dos serviços
 ```
   docker compose down
