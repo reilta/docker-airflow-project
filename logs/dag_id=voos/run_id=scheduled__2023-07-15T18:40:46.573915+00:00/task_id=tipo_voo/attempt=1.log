@@ -1,0 +1,16 @@
+[2023-07-16T19:57:56.984+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: voos.tipo_voo scheduled__2023-07-15T18:40:46.573915+00:00 [queued]>
+[2023-07-16T19:57:57.014+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: voos.tipo_voo scheduled__2023-07-15T18:40:46.573915+00:00 [queued]>
+[2023-07-16T19:57:57.014+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-16T19:57:57.036+0000] {taskinstance.py:1327} INFO - Executing <Task(BranchPythonOperator): tipo_voo> on 2023-07-15 18:40:46.573915+00:00
+[2023-07-16T19:57:57.042+0000] {standard_task_runner.py:57} INFO - Started process 1124 to run task
+[2023-07-16T19:57:57.046+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'voos', 'tipo_voo', 'scheduled__2023-07-15T18:40:46.573915+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_dag/main.py', '--cfg-path', '/tmp/tmpwds04anx']
+[2023-07-16T19:57:57.048+0000] {standard_task_runner.py:85} INFO - Job 56: Subtask tipo_voo
+[2023-07-16T19:57:57.121+0000] {task_command.py:410} INFO - Running <TaskInstance: voos.tipo_voo scheduled__2023-07-15T18:40:46.573915+00:00 [running]> on host 44a26cae519f
+[2023-07-16T19:57:57.226+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='voos' AIRFLOW_CTX_TASK_ID='tipo_voo' AIRFLOW_CTX_EXECUTION_DATE='2023-07-15T18:40:46.573915+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-15T18:40:46.573915+00:00'
+[2023-07-16T19:57:57.239+0000] {python.py:183} INFO - Done. Returned value was: nacional
+[2023-07-16T19:57:57.239+0000] {python.py:216} INFO - Branch callable return nacional
+[2023-07-16T19:57:57.239+0000] {skipmixin.py:164} INFO - Following branch nacional
+[2023-07-16T19:57:57.240+0000] {skipmixin.py:224} INFO - Skipping tasks ['regional', 'internacional']
+[2023-07-16T19:57:57.320+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=voos, task_id=tipo_voo, execution_date=20230715T184046, start_date=20230716T195756, end_date=20230716T195757
+[2023-07-16T19:57:57.349+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-16T19:57:57.381+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
