@@ -1,33 +1,33 @@
 # docker-airflow-project
-Trabalho final apresentado na disciplina DCA0132 - Engenharia de Dados, com o intuito de agendar, monitorar e orquestar tarefas em fluxo de dados (pipelines). Foi utilizado um dos datasets (voos2.csv) disponibilizados na [página do professor](https://www.dca.ufrn.br/~viegas/disciplinas/DCA0132/files/Datasets/).
+Final work presented in the course DCA0132 - Data Engineering, with the aim of scheduling, monitoring and orchestrating tasks in data flows (pipelines). One of the datasets (voos2.csv) available on [the teacher's page](https://www.dca.ufrn.br/~viegas/disciplinas/DCA0132/files/Datasets/) was used.
 
-### Instalação
+### Setup
 ```
 git clone https://github.com/reilta/docker-airflow-project.git
 ```
-### Exercutando
+### Running
 ```
    docker-compose up airflow-init
    docker compose up
 ```
-### Visualizando os serviços
+### Viewing services
 ```
   watch docker ps
 ```
 
-### Visualizando o airflow
+### Visualizing the airflow
 
 ```
 localhost:8080
 ```
 
-### Parando e removendo os containers dos serviços
+### Stopping and removing service containers
 ```
   docker compose down
 ```
 
-### Conjunto de dados
-Um dataset com informações sobre voos, contendo informações de voos internacionais, nacionais e regionais.
+### Data set
+A dataset with flight information, containing information on international, national and regional flights.
 
-### Resultados obtidos
-Carregamento e tranformação dos dados, tarefas para definir a quantidade e quais os países de origem dos voos, e também para os de destino; tarefa também para descobrir a quantidade de voos por cartegoria (nacional, internacional, regional) etc.
+### Results
+Loading and transforming the data, tasks to define the number and countries of origin of the flights, and also for those of destination; task also to find out the number of flights by category (national, international, regional) etc.
